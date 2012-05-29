@@ -1390,6 +1390,7 @@
    
 }
 -(void)SerchDataFromPDF{
+    NSAutoreleasePool *pool = [NSAutoreleasePool new];
     keyWord = [[searchBar text] retain];
     int lastPage=currentPage;
     currentPage=currentPage-1;
@@ -1397,6 +1398,7 @@
     //[searchPopVC dismissPopoverAnimated:YES];
     [self showDocumentPage:lastPage];
     [self GetListOfSearchPage];
+    [pool release];
 }
 - (BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar
 {
