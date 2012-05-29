@@ -56,7 +56,6 @@
 		A98BB0E11574A0F100A889CA /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72F6141FC0B1003524C3 /* ReaderContentView.m */; };
 		A98BB0E21574A11D00A889CA /* Scanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D16DE21536D6F400E934D8 /* Scanner.m */; };
 		A98BB0E31574A14200A889CA /* FontCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D16DDC1536D6F400E934D8 /* FontCollection.m */; };
-		A98BB0EA1574A40800A889CA /* sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A98BB0E91574A40800A889CA /* sample.pdf */; };
 		A98CF97D1529D39E002B5877 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CF97C1529D39E002B5877 /* Security.framework */; };
 		A98F89EF153ED83F00BAB16D /* alertmessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A98F89EE153ED83F00BAB16D /* alertmessage.m */; };
 		A98FD9BF153C2D0700A83D5A /* 6.1_Find.png in Resources */ = {isa = PBXBuildFile; fileRef = A98FD9BE153C2D0700A83D5A /* 6.1_Find.png */; };
@@ -78,6 +77,7 @@
 		A9D16E041536DC7400E934D8 /* Type3Font.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D16DF01536D6F400E934D8 /* Type3Font.m */; };
 		A9D16E051536DC9100E934D8 /* TrueTypeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D16DEA1536D6F400E934D8 /* TrueTypeFont.m */; };
 		A9D16E061536DCBA00E934D8 /* RenderingState.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D16DE01536D6F400E934D8 /* RenderingState.m */; };
+		A9E9A1561574A767003A0280 /* Mah_Jong_British_Rules_Sample_PDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9E9A1551574A767003A0280 /* Mah_Jong_British_Rules_Sample_PDF.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,7 +154,6 @@
 		45AB7312141FC0B1003524C3 /* ThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbsViewController.m; path = Sources/ThumbsViewController.m; sourceTree = "<group>"; };
 		45BD5AFD13AE721A00D6FE97 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Reader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Reader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A98BB0E91574A40800A889CA /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
 		A98CF97C1529D39E002B5877 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A98F89ED153ED83F00BAB16D /* alertmessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alertmessage.h; sourceTree = "<group>"; };
 		A98F89EE153ED83F00BAB16D /* alertmessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alertmessage.m; sourceTree = "<group>"; };
@@ -197,6 +196,7 @@
 		A9D16DF41536D7BC00E934D8 /* Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Font.m; sourceTree = "<group>"; };
 		A9D16DF51536D7BC00E934D8 /* FontDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontDescriptor.h; sourceTree = "<group>"; };
 		A9D16DF61536D7BC00E934D8 /* FontDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontDescriptor.m; sourceTree = "<group>"; };
+		A9E9A1551574A767003A0280 /* Mah_Jong_British_Rules_Sample_PDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mah_Jong_British_Rules_Sample_PDF.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,7 +270,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A98BB0E91574A40800A889CA /* sample.pdf */,
+				A9E9A1551574A767003A0280 /* Mah_Jong_British_Rules_Sample_PDF.pdf */,
 				8D1107310486CEB800E47090 /* Reader-Info.plist */,
 				4541A9D7122EA716001A5E60 /* Localizable.strings */,
 			);
@@ -492,7 +492,7 @@
 				A98FD9BF153C2D0700A83D5A /* 6.1_Find.png in Resources */,
 				A98FD9C2153C2F0200A83D5A /* Black_Search.png in Resources */,
 				A98FD9C7153C343800A83D5A /* SearchPopVC.xib in Resources */,
-				A98BB0EA1574A40800A889CA /* sample.pdf in Resources */,
+				A9E9A1561574A767003A0280 /* Mah_Jong_British_Rules_Sample_PDF.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
