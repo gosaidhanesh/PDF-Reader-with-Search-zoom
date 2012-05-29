@@ -447,7 +447,17 @@
     
     UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    searchButton.frame = CGRectMake(600, BUTTON_Y, 44, BUTTON_HEIGHT);
+    if (gCurrentOrientation==UIInterfaceOrientationPortrait) {
+        searchButton.frame = CGRectMake(570, BUTTON_Y, 44, BUTTON_HEIGHT);
+    }else if(gCurrentOrientation==UIInterfaceOrientationPortraitUpsideDown){
+       searchButton.frame = CGRectMake(570, BUTTON_Y, 44, BUTTON_HEIGHT); 
+    }else if(gCurrentOrientation==UIInterfaceOrientationLandscapeLeft){
+        searchButton.frame = CGRectMake(550, BUTTON_Y, 44, BUTTON_HEIGHT);
+        
+    }else if(gCurrentOrientation==UIInterfaceOrientationLandscapeRight){
+        searchButton.frame = CGRectMake(550, BUTTON_Y, 44, BUTTON_HEIGHT);
+    }
+    
     [searchButton setImage:markImageN forState:UIControlStateNormal];
     [searchButton addTarget:self action:@selector(searchButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [searchButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
@@ -647,7 +657,7 @@
 
 -(IBAction)searchButtonTapped:(id)sender{
     //if (![sender isSelected]) {
-    
+
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
     {
         ObjVC=[[UIViewController alloc] init];//WithNibName:@"SearchPopVC" bundle:nil];
@@ -686,7 +696,9 @@
         
         
     }
-        [sender setSelected:YES];
+       
+    [sender setSelected:YES];
+    [searchBar becomeFirstResponder];
     
     
 }
